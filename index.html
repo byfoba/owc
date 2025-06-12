@@ -1,0 +1,1153 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ezequiel Ortega - Asesor Financiero Profesional</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              brand: {
+                50: "#f0f4ff",
+                100: "#e0eaff",
+                200: "#c7d7ff",
+                300: "#a5b8ff",
+                400: "#8190ff",
+                500: "#6366f1",
+                600: "#5950e9",
+                700: "#4f46e5",
+                800: "#4338ca",
+                900: "#3730a3",
+                950: "#312e81",
+              },
+              purple: {
+                50: "#faf7ff",
+                100: "#f3ecff",
+                200: "#e9ddff",
+                300: "#d6c2ff",
+                400: "#bc9cff",
+                500: "#a16eff",
+                600: "#9146ff",
+                700: "#7c2aff",
+                800: "#6817d9",
+                900: "#5a15b3",
+                950: "#3b0a7a",
+              },
+              info: {
+                50: "#eff8ff",
+                100: "#dbeafe",
+                500: "#3b82f6",
+                600: "#2563eb",
+                700: "#1d4ed8",
+              },
+            },
+          },
+        },
+      };
+    </script>
+    <style>
+      html {
+        scroll-behavior: smooth;
+      }
+      .hero-bg {
+        background: linear-gradient(to bottom right, #f9fafb, #eff6ff);
+      }
+      .experience-bg {
+        background: linear-gradient(to bottom right, #5950e9, #9146ff, #7c2aff);
+      }
+      .contact-bg {
+        background: linear-gradient(to bottom right, #111827, #1f2937);
+      }
+    </style>
+  </head>
+  <body class="min-h-screen bg-white">
+    <!-- Header -->
+    <header
+      class="border-b border-gray-100 sticky top-0 bg-white/95 backdrop-blur-sm z-50"
+    >
+      <div class="container mx-auto px-6 py-4">
+        <div class="flex items-center justify-between">
+          <div class="flex items-center gap-2">
+            <div
+              class="w-8 h-8 bg-brand-600 rounded-lg flex items-center justify-center"
+            >
+              <span class="text-white font-bold text-sm">EO</span>
+            </div>
+            <span class="font-semibold text-gray-900">Ezequiel Ortega</span>
+          </div>
+          <nav class="hidden md:flex items-center gap-8">
+            <a
+              href="#servicios"
+              class="text-gray-600 hover:text-brand-600 transition-colors"
+              >Servicios</a
+            >
+            <a
+              href="#experiencia"
+              class="text-gray-600 hover:text-brand-600 transition-colors"
+              >Experiencia</a
+            >
+            <a
+              href="#testimonios"
+              class="text-gray-600 hover:text-brand-600 transition-colors"
+              >Testimonios</a
+            >
+            <a
+              href="#contacto"
+              class="text-gray-600 hover:text-brand-600 transition-colors"
+              >Contacto</a
+            >
+          </nav>
+          <div class="md:hidden">
+            <button
+              onclick="toggleMenu()"
+              class="p-2 text-gray-600 hover:text-gray-900"
+            >
+              <svg
+                class="w-6 h-6"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M4 6h16M4 12h16M4 18h16"
+                ></path>
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- Mobile Menu -->
+    <div
+      id="mobileMenu"
+      class="hidden md:hidden bg-white border-b border-gray-100"
+    >
+      <div class="px-6 py-4 space-y-4">
+        <a
+          href="#servicios"
+          class="block text-gray-600 hover:text-brand-600 transition-colors"
+          onclick="toggleMenu()"
+          >Servicios</a
+        >
+        <a
+          href="#experiencia"
+          class="block text-gray-600 hover:text-brand-600 transition-colors"
+          onclick="toggleMenu()"
+          >Experiencia</a
+        >
+        <a
+          href="#testimonios"
+          class="block text-gray-600 hover:text-brand-600 transition-colors"
+          onclick="toggleMenu()"
+          >Testimonios</a
+        >
+        <a
+          href="#contacto"
+          class="block text-gray-600 hover:text-brand-600 transition-colors"
+          onclick="toggleMenu()"
+          >Contacto</a
+        >
+      </div>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="hero-bg py-20 lg:py-32">
+      <div class="container mx-auto px-6">
+        <div class="grid lg:grid-cols-2 gap-12 items-center">
+          <div class="space-y-8">
+            <div class="space-y-4">
+              <h1
+                class="text-4xl lg:text-6xl font-bold text-gray-900 leading-tight"
+              >
+                Ezequiel Ortega
+              </h1>
+              <h2 class="text-xl lg:text-2xl text-gray-700 font-medium">
+                Asesor Financiero Profesional
+              </h2>
+            </div>
+
+            <p class="text-gray-600 text-lg max-w-lg leading-relaxed">
+              Especialista en inversiones y gestión de capital en Balanz. Te
+              ayudo a hacer crecer tu patrimonio con estrategias personalizadas
+              y un enfoque profesional respaldado por años de experiencia.
+            </p>
+
+            <div class="flex flex-col sm:flex-row gap-4">
+              <a
+                href="#contacto"
+                class="inline-flex items-center justify-center bg-brand-600 hover:bg-brand-700 text-white px-8 py-3 text-base font-medium rounded-md transition-colors cursor-pointer"
+              >
+                Empezar a Invertir
+                <svg
+                  class="ml-2 h-4 w-4"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M3 3v16a2 2 0 0 0 2 2h16M7 16h8M7 11h3"
+                  ></path>
+                </svg>
+              </a>
+            </div>
+          </div>
+
+          <div class="relative">
+            <div class="relative rounded-2xl overflow-hidden shadow-2xl">
+              <div
+                class="w-full h-80 bg-gradient-to-br from-gray-800 to-gray-900 flex items-center justify-center"
+              >
+                <div class="text-center text-white">
+                  <svg
+                    class="w-16 h-16 mx-auto mb-4 opacity-50"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"
+                    ></path>
+                  </svg>
+                  <p class="text-sm opacity-75">Financial Analytics</p>
+                </div>
+              </div>
+              <div
+                class="absolute inset-0 bg-gradient-to-br from-transparent to-gray-900/20"
+              ></div>
+              <div class="absolute top-4 left-4 right-4">
+                <div
+                  class="bg-white/10 backdrop-blur-sm rounded-lg p-4 border border-white/20"
+                >
+                  <div
+                    class="flex items-center justify-between text-white text-sm mb-2"
+                  >
+                    <span>Portfolio Performance</span>
+                    <span class="text-green-400">+12.5%</span>
+                  </div>
+                  <div class="h-2 bg-white/20 rounded-full overflow-hidden">
+                    <div
+                      class="h-full bg-gradient-to-r from-green-400 to-blue-400 w-3/4 rounded-full"
+                    ></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Information Alert -->
+    <section class="py-4 bg-info-50 border-l-4 border-info-500">
+      <div class="container mx-auto px-6">
+        <div class="flex items-center gap-3 text-info-700">
+          <svg
+            class="h-5 w-5 flex-shrink-0"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-2.5L13.732 4c-.77-.833-1.964-.833-2.732 0L3.732 16.5c-.77.833.192 2.5 1.732 2.5z"
+            ></path>
+          </svg>
+          <p class="text-sm">
+            <strong>Información Importante:</strong> La inversión en valores y
+            el servicio de asesoría son SIN COSTO.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Statistics -->
+    <section class="py-16 bg-white">
+      <div class="container mx-auto px-6">
+        <div class="grid grid-cols-2 lg:grid-cols-4 gap-8">
+          <div class="text-center">
+            <div
+              class="w-16 h-16 bg-brand-100 rounded-full flex items-center justify-center mx-auto mb-4"
+            >
+              <svg
+                class="h-8 w-8 text-brand-600"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197m13.5-9a2.5 2.5 0 11-5 0 2.5 2.5 0 015 0z"
+                ></path>
+              </svg>
+            </div>
+            <div class="text-3xl font-bold text-gray-900 mb-1">500+</div>
+            <div class="text-gray-600 text-sm">Clientes Satisfechos</div>
+          </div>
+
+          <div class="text-center">
+            <div
+              class="w-16 h-16 bg-brand-100 rounded-full flex items-center justify-center mx-auto mb-4"
+            >
+              <svg
+                class="h-8 w-8 text-brand-600"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+                ></path>
+              </svg>
+            </div>
+            <div class="text-3xl font-bold text-gray-900 mb-1">$50M+</div>
+            <div class="text-gray-600 text-sm">Capital Gestionado</div>
+          </div>
+
+          <div class="text-center">
+            <div
+              class="w-16 h-16 bg-brand-100 rounded-full flex items-center justify-center mx-auto mb-4"
+            >
+              <svg
+                class="h-8 w-8 text-brand-600"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z"
+                ></path>
+              </svg>
+            </div>
+            <div class="text-3xl font-bold text-gray-900 mb-1">5+</div>
+            <div class="text-gray-600 text-sm">Años de Experiencia</div>
+          </div>
+
+          <div class="text-center">
+            <div
+              class="w-16 h-16 bg-brand-100 rounded-full flex items-center justify-center mx-auto mb-4"
+            >
+              <svg
+                class="h-8 w-8 text-brand-600"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
+                ></path>
+              </svg>
+            </div>
+            <div class="text-3xl font-bold text-gray-900 mb-1">98%</div>
+            <div class="text-gray-600 text-sm">Tasa de Éxito</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="servicios" class="py-20 bg-gray-50">
+      <div class="container mx-auto px-6">
+        <div class="text-center mb-16">
+          <h2 class="text-3xl lg:text-4xl font-bold text-gray-900 mb-4">
+            Servicios <span class="text-brand-600">Profesionales</span>
+          </h2>
+          <p class="text-gray-600 text-lg max-w-2xl mx-auto">
+            Ofrezco servicios integrales de asesoría financiera adaptados a tus
+            necesidades específicas
+          </p>
+        </div>
+
+        <div class="grid md:grid-cols-3 gap-8">
+          <div
+            class="bg-white rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 p-8"
+          >
+            <div
+              class="w-16 h-16 bg-brand-100 rounded-lg flex items-center justify-center mb-6"
+            >
+              <svg
+                class="h-8 w-8 text-brand-600"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"
+                ></path>
+              </svg>
+            </div>
+
+            <h3 class="text-xl font-semibold text-gray-900 mb-4">
+              Asesoría en Inversiones
+            </h3>
+
+            <p class="text-gray-600 mb-6">
+              Estrategias personalizadas para maximizar tu rentabilidad y
+              minimizar riesgos de inversión.
+            </p>
+
+            <div class="space-y-3 mb-8">
+              <div class="flex items-center gap-3 text-sm text-gray-600">
+                <svg
+                  class="h-4 w-4 text-green-500"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
+                  ></path>
+                </svg>
+                <span>Análisis de mercado</span>
+              </div>
+              <div class="flex items-center gap-3 text-sm text-gray-600">
+                <svg
+                  class="h-4 w-4 text-green-500"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
+                  ></path>
+                </svg>
+                <span>Diversificación de cartera</span>
+              </div>
+              <div class="flex items-center gap-3 text-sm text-gray-600">
+                <svg
+                  class="h-4 w-4 text-green-500"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
+                  ></path>
+                </svg>
+                <span>Gestión de riesgos</span>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="bg-white rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 p-8"
+          >
+            <div
+              class="w-16 h-16 bg-brand-100 rounded-lg flex items-center justify-center mb-6"
+            >
+              <svg
+                class="h-8 w-8 text-brand-600"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M9 12l2 2 4-4m5-6a9 9 0 11-18 0 9 9 0 0118 0z"
+                ></path>
+              </svg>
+            </div>
+
+            <h3 class="text-xl font-semibold text-gray-900 mb-4">
+              Gestión de Capital
+            </h3>
+
+            <p class="text-gray-600 mb-6">
+              Administración profesional de tu patrimonio del capital financiero
+              con enfoque a largo plazo.
+            </p>
+
+            <div class="space-y-3 mb-8">
+              <div class="flex items-center gap-3 text-sm text-gray-600">
+                <svg
+                  class="h-4 w-4 text-green-500"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
+                  ></path>
+                </svg>
+                <span>Planificación financiera</span>
+              </div>
+              <div class="flex items-center gap-3 text-sm text-gray-600">
+                <svg
+                  class="h-4 w-4 text-green-500"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
+                  ></path>
+                </svg>
+                <span>Optimización fiscal</span>
+              </div>
+              <div class="flex items-center gap-3 text-sm text-gray-600">
+                <svg
+                  class="h-4 w-4 text-green-500"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
+                  ></path>
+                </svg>
+                <span>Seguimiento continuo</span>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="bg-white rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 p-8"
+          >
+            <div
+              class="w-16 h-16 bg-brand-100 rounded-lg flex items-center justify-center mb-6"
+            >
+              <svg
+                class="h-8 w-8 text-brand-600"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M11 3.055A9.001 9.001 0 1020.945 13H11V3.055z M20.488 9H15V3.512A9.025 9.025 0 0120.488 9z"
+                ></path>
+              </svg>
+            </div>
+
+            <h3 class="text-xl font-semibold text-gray-900 mb-4">
+              Planificación Financiera
+            </h3>
+
+            <p class="text-gray-600 mb-6">
+              Diseño de estrategias a largo plazo para alcanzar tus objetivos
+              financieros y patrimoniales.
+            </p>
+
+            <div class="space-y-3 mb-8">
+              <div class="flex items-center gap-3 text-sm text-gray-600">
+                <svg
+                  class="h-4 w-4 text-green-500"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
+                  ></path>
+                </svg>
+                <span>Metas personalizadas</span>
+              </div>
+              <div class="flex items-center gap-3 text-sm text-gray-600">
+                <svg
+                  class="h-4 w-4 text-green-500"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
+                  ></path>
+                </svg>
+                <span>Análisis de flujo de caja</span>
+              </div>
+              <div class="flex items-center gap-3 text-sm text-gray-600">
+                <svg
+                  class="h-4 w-4 text-green-500"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
+                  ></path>
+                </svg>
+                <span>Proyecciones futuras</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experiencia" class="py-20 experience-bg text-white">
+      <div class="container mx-auto px-6">
+        <div class="grid lg:grid-cols-2 gap-12 items-center">
+          <div class="space-y-8">
+            <h2 class="text-3xl lg:text-4xl font-bold leading-tight">
+              Experiencia de Ezequiel Ortega en
+              <span class="block">Balanz</span>
+            </h2>
+
+            <p class="text-lg text-white/90 leading-relaxed">
+              Trabajando en Grupo Balanz uno de los principales grupos de
+              inversión de Argentina, Ezequiel Ortega tiene acceso a las mejores
+              herramientas y análisis del mercado para ofrecerte estrategias de
+              inversión exitosas.
+            </p>
+
+            <div class="space-y-6">
+              <div class="flex items-start gap-4">
+                <div
+                  class="w-12 h-12 bg-white/20 rounded-lg flex items-center justify-center flex-shrink-0"
+                >
+                  <svg
+                    class="h-6 w-6 text-white"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0h3m-3 0h5"
+                    ></path>
+                  </svg>
+                </div>
+                <div>
+                  <h3 class="font-semibold text-lg mb-1">
+                    Asesor Financiero Certificado
+                  </h3>
+                  <p class="text-white/80">
+                    Acreditado en gestión de valores y análisis de mercado
+                  </p>
+                </div>
+              </div>
+
+              <div class="flex items-start gap-4">
+                <div
+                  class="w-12 h-12 bg-white/20 rounded-lg flex items-center justify-center flex-shrink-0"
+                >
+                  <svg
+                    class="h-6 w-6 text-white"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6"
+                    ></path>
+                  </svg>
+                </div>
+                <div>
+                  <h3 class="font-semibold text-lg mb-1">Operador Bursátil</h3>
+                  <p class="text-white/80">
+                    Experiencia directa en operaciones de mercado y trading
+                  </p>
+                </div>
+              </div>
+
+              <div class="flex items-start gap-4">
+                <div
+                  class="w-12 h-12 bg-white/20 rounded-lg flex items-center justify-center flex-shrink-0"
+                >
+                  <svg
+                    class="h-6 w-6 text-white"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M9 7h6m0 10v-3m-3 3h.01M9 17h.01M9 14h.01M12 14h.01M15 11h.01M12 11h.01M9 11h.01M7 21h10a2 2 0 002-2V5a2 2 0 00-2-2H7a2 2 0 00-2 2v14a2 2 0 002 2z"
+                    ></path>
+                  </svg>
+                </div>
+                <div>
+                  <h3 class="font-semibold text-lg mb-1">Gestión de Capital</h3>
+                  <p class="text-white/80">
+                    Especialista en administración de patrimonio importantes
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="relative">
+            <div class="relative rounded-2xl overflow-hidden shadow-2xl">
+              <div
+                class="w-full h-80 bg-gradient-to-br from-gray-800 to-gray-900 flex items-center justify-center"
+              >
+                <div class="text-center text-white">
+                  <svg
+                    class="w-16 h-16 mx-auto mb-4 opacity-50"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0h3m-3 0h5"
+                    ></path>
+                  </svg>
+                  <p class="text-sm opacity-75">Balanz Office</p>
+                </div>
+              </div>
+              <div
+                class="absolute inset-0 bg-gradient-to-t from-gray-900/50 to-transparent"
+              ></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section id="testimonios" class="py-20 bg-white">
+      <div class="container mx-auto px-6">
+        <div class="text-center mb-16">
+          <h2 class="text-3xl lg:text-4xl font-bold text-gray-900 mb-4">
+            Lo que dicen mis <span class="text-brand-600">Clientes</span>
+          </h2>
+          <p class="text-gray-600 text-lg">
+            Testimonios reales de clientes satisfechos
+          </p>
+        </div>
+
+        <div class="grid md:grid-cols-3 gap-8">
+          <div class="bg-white rounded-lg shadow-lg p-8">
+            <div class="flex mb-4">
+              <svg
+                class="h-5 w-5 text-yellow-400 fill-current"
+                viewBox="0 0 20 20"
+              >
+                <path
+                  d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                />
+              </svg>
+              <svg
+                class="h-5 w-5 text-yellow-400 fill-current"
+                viewBox="0 0 20 20"
+              >
+                <path
+                  d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                />
+              </svg>
+              <svg
+                class="h-5 w-5 text-yellow-400 fill-current"
+                viewBox="0 0 20 20"
+              >
+                <path
+                  d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                />
+              </svg>
+              <svg
+                class="h-5 w-5 text-yellow-400 fill-current"
+                viewBox="0 0 20 20"
+              >
+                <path
+                  d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                />
+              </svg>
+              <svg
+                class="h-5 w-5 text-yellow-400 fill-current"
+                viewBox="0 0 20 20"
+              >
+                <path
+                  d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                />
+              </svg>
+            </div>
+            <p class="text-gray-600 mb-6 italic">
+              "Excelente asesoramiento. Me ayudó de manera de mi cartera en 25%
+              en el último año."
+            </p>
+            <div class="flex items-center gap-3">
+              <div
+                class="w-10 h-10 bg-brand-100 rounded-full flex items-center justify-center"
+              >
+                <span class="text-brand-600 font-semibold text-sm">MG</span>
+              </div>
+              <div>
+                <div class="font-semibold text-gray-900">María González</div>
+                <div class="text-gray-500 text-sm">Empresaria</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="bg-white rounded-lg shadow-lg p-8">
+            <div class="flex mb-4">
+              <svg
+                class="h-5 w-5 text-yellow-400 fill-current"
+                viewBox="0 0 20 20"
+              >
+                <path
+                  d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                />
+              </svg>
+              <svg
+                class="h-5 w-5 text-yellow-400 fill-current"
+                viewBox="0 0 20 20"
+              >
+                <path
+                  d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                />
+              </svg>
+              <svg
+                class="h-5 w-5 text-yellow-400 fill-current"
+                viewBox="0 0 20 20"
+              >
+                <path
+                  d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                />
+              </svg>
+              <svg
+                class="h-5 w-5 text-yellow-400 fill-current"
+                viewBox="0 0 20 20"
+              >
+                <path
+                  d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                />
+              </svg>
+              <svg
+                class="h-5 w-5 text-yellow-400 fill-current"
+                viewBox="0 0 20 20"
+              >
+                <path
+                  d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                />
+              </svg>
+            </div>
+            <p class="text-gray-600 mb-6 italic">
+              "Muy profesional y transparente. Siempre explica las estrategias
+              claramente."
+            </p>
+            <div class="flex items-center gap-3">
+              <div
+                class="w-10 h-10 bg-brand-100 rounded-full flex items-center justify-center"
+              >
+                <span class="text-brand-600 font-semibold text-sm">CB</span>
+              </div>
+              <div>
+                <div class="font-semibold text-gray-900">Carlos Rodríguez</div>
+                <div class="text-gray-500 text-sm">Inversor</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="bg-white rounded-lg shadow-lg p-8">
+            <div class="flex mb-4">
+              <svg
+                class="h-5 w-5 text-yellow-400 fill-current"
+                viewBox="0 0 20 20"
+              >
+                <path
+                  d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                />
+              </svg>
+              <svg
+                class="h-5 w-5 text-yellow-400 fill-current"
+                viewBox="0 0 20 20"
+              >
+                <path
+                  d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                />
+              </svg>
+              <svg
+                class="h-5 w-5 text-yellow-400 fill-current"
+                viewBox="0 0 20 20"
+              >
+                <path
+                  d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                />
+              </svg>
+              <svg
+                class="h-5 w-5 text-yellow-400 fill-current"
+                viewBox="0 0 20 20"
+              >
+                <path
+                  d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                />
+              </svg>
+              <svg
+                class="h-5 w-5 text-yellow-400 fill-current"
+                viewBox="0 0 20 20"
+              >
+                <path
+                  d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                />
+              </svg>
+            </div>
+            <p class="text-gray-600 mb-6 italic">
+              "Me ayudó a planificar mi jubilación de manera segura y rentable."
+            </p>
+            <div class="flex items-center gap-3">
+              <div
+                class="w-10 h-10 bg-brand-100 rounded-full flex items-center justify-center"
+              >
+                <span class="text-brand-600 font-semibold text-sm">AM</span>
+              </div>
+              <div>
+                <div class="font-semibold text-gray-900">Ana Martínez</div>
+                <div class="text-gray-500 text-sm">Jubilada</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact CTA Section -->
+    <section id="contacto" class="py-20 contact-bg text-white">
+      <div class="container mx-auto px-6">
+        <div class="grid lg:grid-cols-2 gap-12 items-center">
+          <div class="space-y-8">
+            <div>
+              <h2 class="text-3xl lg:text-4xl font-bold mb-4">
+                ¿Listo para hacer crecer tu
+                <span class="block text-brand-400">patrimonio?</span>
+              </h2>
+              <p class="text-gray-300 text-lg">
+                Contacta a Ezequiel Ortega para una consulta personalizada y
+                descubre cómo puede ayudarte a alcanzar tus objetivos
+                financieros.
+              </p>
+            </div>
+
+            <div class="space-y-4">
+              <div class="flex items-center gap-3">
+                <svg
+                  class="h-5 w-5 text-brand-400"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"
+                  ></path>
+                </svg>
+                <span>Teléfono</span>
+              </div>
+              <div class="text-gray-300 ml-8">+54 11 1234-5678</div>
+
+              <div class="flex items-center gap-3">
+                <svg
+                  class="h-5 w-5 text-brand-400"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M3 8l7.89 4.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
+                  ></path>
+                </svg>
+                <span>Email</span>
+              </div>
+              <div class="text-gray-300 ml-8">ezequiel.ortega@balanz.com</div>
+
+              <div class="flex items-center gap-3">
+                <svg
+                  class="h-5 w-5 text-brand-400"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z M15 11a3 3 0 11-6 0 3 3 0 016 0z"
+                  ></path>
+                </svg>
+                <span>Ubicación</span>
+              </div>
+              <div class="text-gray-300 ml-8">Buenos Aires, Argentina</div>
+            </div>
+          </div>
+
+          <div class="space-y-6">
+            <h3 class="text-2xl font-semibold mb-6 text-center">
+              Abre tu Cuenta de Inversión
+            </h3>
+
+            <p class="text-gray-300 text-center mb-8">
+              Comienza a invertir con Balanz de forma segura y segura, la
+              apertura y mantención de cuenta son sin cobros sin costo.
+            </p>
+
+            <div class="space-y-4">
+              <a
+                href="#"
+                class="block w-full bg-brand-600 hover:bg-brand-700 text-white py-4 px-6 text-lg font-medium rounded-lg text-center transition-colors"
+              >
+                Abrir Cuenta Nacional
+                <span class="ml-2">→</span>
+              </a>
+
+              <a
+                href="#"
+                class="block w-full border border-brand-400 text-brand-400 hover:bg-brand-400 hover:text-white py-4 px-6 text-lg font-medium rounded-lg text-center transition-colors"
+              >
+                Abrir Cuenta Internacional
+                <span class="ml-2">→</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12">
+      <div class="container mx-auto px-6">
+        <div class="grid md:grid-cols-4 gap-8 mb-8">
+          <div>
+            <div class="flex items-center gap-2 mb-4">
+              <div
+                class="w-8 h-8 bg-brand-600 rounded-lg flex items-center justify-center"
+              >
+                <span class="text-white font-bold text-sm">EO</span>
+              </div>
+              <span class="font-semibold">Ezequiel Ortega</span>
+            </div>
+            <p class="text-gray-400 text-sm leading-relaxed">
+              Especialista en inversiones y gestión de capital. Tu socio
+              estratégico para el crecimiento financiero.
+            </p>
+          </div>
+
+          <div>
+            <h4 class="font-semibold mb-4">Servicios</h4>
+            <ul class="space-y-2 text-sm text-gray-400">
+              <li>
+                <a href="#" class="hover:text-white transition-colors"
+                  >Asesoría en Inversiones</a
+                >
+              </li>
+              <li>
+                <a href="#" class="hover:text-white transition-colors"
+                  >Gestión de Capital</a
+                >
+              </li>
+              <li>
+                <a href="#" class="hover:text-white transition-colors"
+                  >Planificación Financiera</a
+                >
+              </li>
+              <li>
+                <a href="#" class="hover:text-white transition-colors"
+                  >Análisis de Portafolio</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <div>
+            <h4 class="font-semibold mb-4">Contacto</h4>
+            <ul class="space-y-2 text-sm text-gray-400">
+              <li>Buenos Aires, Argentina</li>
+              <li>+54 11 1234-5678</li>
+              <li>ezequiel.ortega@balanz.com</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="border-t border-gray-800 pt-8">
+          <p class="text-center text-gray-400 text-sm">
+            © 2025 Ezequiel Ortega - Asesor Financiero AP #2299. Todos los
+            derechos reservados.
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      function toggleMenu() {
+        const menu = document.getElementById("mobileMenu");
+        menu.classList.toggle("hidden");
+      }
+
+      // Smooth scrolling for anchor links
+      document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+        anchor.addEventListener("click", function (e) {
+          e.preventDefault();
+          const target = document.querySelector(this.getAttribute("href"));
+          if (target) {
+            target.scrollIntoView({
+              behavior: "smooth",
+              block: "start",
+            });
+          }
+        });
+      });
+    </script>
+  </body>
+</html>
